@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/hajrudinco/typescript-training/issues"
   },
-  "homepage": "https://github.com/hajrudinco/typescript-training#readme"
+  "homepage": "https://github.com/hajrudinco/typescript-training#readme",
+  "dependencies": {
+    "ts-node": "8.0.1",
+    "typescript": "3.2.4"
+  }
 }
