@@ -23,7 +23,7 @@ let x: [string, number];
 x = ["hello", 10]; 
 
 enum Color { Red, Green, Blue }
-let c: Color = Color.Green;
+let greenColor: Color = Color.Green;
 let colorName: string = Color[2];
 
 let notSure: any = 4;
