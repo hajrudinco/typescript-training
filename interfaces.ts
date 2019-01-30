@@ -75,7 +75,7 @@ let myArray2: ReadonlyStringArray = ["Alice", "Bob"];
 
 interface ClockInterface {
     currentTime: Date;
-    setTime(d: Date);
+    setTime(d: Date): void;
 }
 
 class Clock implements ClockInterface {
@@ -92,7 +92,7 @@ interface ClockConstructor {
 }
 
 interface ClockInterfaceTick {
-    tick();
+    tick(): void;
 }
 
 function createClock(ctor: ClockConstructor, hour: number, minute: number): ClockInterfaceTick {
@@ -116,7 +116,7 @@ class AnalogClock implements ClockInterfaceTick {
 let digital = createClock(DigitalClock, 12, 17);
 let analog = createClock(AnalogClock, 7, 32);
 
-interface Shape {
+interface IShape {
     color: string;
 }
 
@@ -124,7 +124,7 @@ interface PenStroke {
     penWidth: number;
 }
 
-interface Square extends Shape, PenStroke {
+interface Square extends IShape, PenStroke {
     sideLength: number;
 }
 

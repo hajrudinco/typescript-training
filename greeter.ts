@@ -1,4 +1,4 @@
-interface Person {
+interface GreeterPerson {
     firstName: string;
     lastName: string;
 }
@@ -24,7 +24,7 @@ class Developer {
  * console.log - greets the person.
  * @param person 
  */
-function greeter(person: Person) {
+function greeter(person: GreeterPerson) {
     console.log(`Hello, ${person.firstName} ${person.lastName}`);
 }
 

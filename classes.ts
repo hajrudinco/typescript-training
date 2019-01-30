@@ -41,12 +41,12 @@ let tom: Animal = new Horse("Tommy the Palomino");
 sam.move();
 tom.move(34);
 
-class Person {
+class PersonClass {
     protected name: string;
     constructor(name: string) { this.name = name; }
 }
 
-class Employee extends Person {
+class Employee extends PersonClass {
     private department: string;
 
     constructor(name: string, department: string) {
