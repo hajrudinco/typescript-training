@@ -3,18 +3,18 @@ class Greeter {
     constructor(message: string) {
         this.greeting = message;
     }
-    greet() {
+    greet(): void {
         console.log(`Hello, ${this.greeting}`);
     }
 }
 
-let greeterInstance = new Greeter("world");
+let greeterInstance: Greeter = new Greeter("world");
 greeterInstance.greet();
 
 class Animal {
     name: string;
     constructor(theName: string) { this.name = theName; }
-    move(distanceInMeters: number = 0) {
+    move(distanceInMeters: number = 0): void {
         console.log(`${this.name} moved ${distanceInMeters}m.`);
     }
 }
